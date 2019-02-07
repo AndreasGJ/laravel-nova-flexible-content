@@ -1,0 +1,85 @@
+.layout-list {
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.layout-list__item {
+  background: #eeeeee;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 10px 20px;
+  margin: 0 0 15px;
+}
+
+.layout-list__item:first-child .btn-up {
+  opacity: 0;
+}
+
+.layout-list__item:last-child .btn-down {
+  opacity: 0;
+}
+
+.layout-list .layout-item__title {
+  font-size: 16px;
+  background: #999999;
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 1;
+  padding: 4px 4px 4px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.layout-list .layout-item__title .btn:first-child {
+  margin-left: auto;
+}
+
+.layout-list .layout-item__title .btn {
+  font-size: 12px;
+  height: auto;
+  padding: 0 12px;
+}
+
+.flexible-input-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.flexible-input-container .input-label {
+  font-weight: bold;
+  background: #eeeeee;
+  font-size: 16px;
+  margin: 0 0 6px 0;
+}
+
+.flexible-input-container .input-control {
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid #bacad6;
+  color: #000000;
+  padding: 7px 10px;
+}
+
