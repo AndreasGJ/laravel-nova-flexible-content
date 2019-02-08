@@ -8,7 +8,7 @@ You can install the field by running the following command:
 
 Then open the nova resource which should use have the Flexible content field.
 
-!(./screenshot.jpg)[Screenshot of Laravel Nova Flexible Field]
+![Screenshot of Laravel Nova Flexible Field](./screenshot.jpg)
 
 ## What is required in the Resource?
 
