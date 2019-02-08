@@ -1,4 +1,5 @@
 # Laravel nova field: Flexible content
+
 This is a Laravel Nova field which makes it possible to do a flexible setup field, which can be controlled within 1 `json` column in a model.
 
 You can install the field by running the following command:
@@ -6,6 +7,8 @@ You can install the field by running the following command:
 `composer require gwd/laravel-nova-flexible-content`
 
 Then open the nova resource which should use have the Flexible content field.
+
+!(./screenshot.jpg)[Screenshot of Laravel Nova Flexible Field]
 
 ## What is required in the Resource?
 
@@ -27,6 +30,7 @@ class ... extends Migration
 ```
 
 And then in the Model:
+
 ```
 class Post extends Model
 {
@@ -37,6 +41,7 @@ class Post extends Model
 ```
 
 Then you can use the Flexible content field, by doing the following setup:
+
 ```
 use Gwd\FlexibleContent\FlexibleContent;
 
@@ -73,12 +78,13 @@ class Post extends Resource
 ```
 
 In the above example you get the following output in the flexible column:
+
 ```
 [
   {
     "data": {
       "title": "This is a title",
-      "image": "IMAGE-PATH-HERE", 
+      "image": "IMAGE-PATH-HERE",
     },
     "type": "full_image"
   }
